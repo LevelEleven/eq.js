@@ -187,7 +187,7 @@
         obj.removeAttribute('data-eq-state');
       }
       else {
-        obj.setAttribute('data-eq-state', eqState);
+        obj.setAttribute('data-eq-state', eqStates[eqStates.length - 1]);
       }
       // Set the details of `eqResize`
       eqResizeEvent = new CustomEvent('eqResize', {'detail': eqState, 'bubbles': true});
